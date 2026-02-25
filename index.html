@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henry & Hollis — December 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --olive: #3B3F2B;
+      --gold: #C5B100;
+      --cream: #FAF9F6;
+      --text-dark: #2C2F1F;
+      --text-light: #6B6E5A;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--olive);
+      color: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100dvh;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: var(--cream);
+      color: var(--text-dark);
+      max-width: 540px;
+      width: 100%;
+      padding: 4rem 3rem;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Gold accent line at top */
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: var(--gold);
+    }
+
+    .save-the-date {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 0.7rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .names {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      line-height: 1.1;
+      color: var(--olive);
+      margin-bottom: 0.25rem;
+    }
+
+    .ampersand {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(1.2rem, 4vw, 1.6rem);
+      color: var(--gold);
+      display: block;
+      margin: 0.3rem 0;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background-color: var(--gold);
+      margin: 2rem auto;
+    }
+
+    .date {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .location {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .divider-sm {
+      width: 20px;
+      height: 1px;
+      background-color: var(--gold);
+      margin: 0 auto 2rem;
+    }
+
+    .details {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.1rem;
+      color: var(--text-light);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <p class="save-the-date">Save the Date</p>
+    <h1 class="names">
+      Henry
+      <span class="ampersand">&amp;</span>
+      Hollis
+    </h1>
+    <div class="divider"></div>
+    <p class="date">December 5th, 2026</p>
+    <p class="location">New York City</p>
+    <div class="divider-sm"></div>
+    <p class="details">Details to Follow</p>
+  </div>
+</body>
+</html>
